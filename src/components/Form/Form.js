@@ -22,8 +22,13 @@ class Form extends Component {
       id: Date.now(),
       ...this.state, 
     };
-    this.props.addRes(newReservation); 
-    this.clearInputs()
+    if(!newReservation.name || !newReservation.date  || !newReservation.time  || !newReservation.number) {
+      return 
+    } else {
+      this.props.addRes(newReservation); 
+      this.clearInputs()
+    }
+ 
     
   };
 

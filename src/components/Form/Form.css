@@ -13,4 +13,6 @@ input {
     background-color: rgba(0,128,128,255);
     color: white;
     height: 28px;
+    width: 150px;
+    font-size: medium;
 }

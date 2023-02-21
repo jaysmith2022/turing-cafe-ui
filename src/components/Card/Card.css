@@ -10,6 +10,9 @@
 .cancel-btn {
     background-color: rgba(0,128,128,255);
     color: white;
+    width: 120px;
+    height: 30px;
+    font-size: large;
 }
 
 h3,

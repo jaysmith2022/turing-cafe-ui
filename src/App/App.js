@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   addReservation = (newInput) => {
-    this.setState({ reservations: [...this.state.reservations, newInput] });
+      this.setState({ reservations: [...this.state.reservations, newInput] });
   };
 
   cancelRes = (id) => {
