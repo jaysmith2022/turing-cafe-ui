@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import { fetchAllReservations } from '../api';
-import Reservations from '../components/Reservations/Reservations';
-import Form from '../components/Form/Form';
+import { fetchAllReservations } from '../../api';
+import Reservations from '../Reservations/Reservations';
+import Form from '../Form/Form';
 
 
 class App extends Component {
