@@ -1,0 +1,21 @@
+.card{
+    width: 350px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 5px solid rgba(0,128,128,255);
+    padding: 10px;
+    background: rgba(255,255,255,255);
+}
+
+.cancel-btn {
+    background-color: rgba(0,128,128,255);
+    color: white;
+    width: 120px;
+    height: 30px;
+    font-size: large;
+}
+
+h3,
+p {
+    color: rgba(0,128,128,255);
+}
