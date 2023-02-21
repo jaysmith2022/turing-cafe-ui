@@ -28,6 +28,11 @@ class App extends Component {
     this.setState({ reservations: [...this.state.reservations, newInput] });
   };
 
+  cancelRes = (id) => {
+    const filteredRes = this.state.reservations.filter(res => res.id !== id)
+    this.setState({reservations: filteredRes})
+  }
+
 
   render() {
     return (
@@ -38,7 +43,7 @@ class App extends Component {
         </div>
         <div className="resy-container">
           {!this.state.reservations ? <h2>Loading...</h2> :
-          <Reservations reservations={this.state.reservations} />
+          <Reservations reservations={this.state.reservations} cancelRes={this.cancelRes} />
           }
         </div>
       </div>
